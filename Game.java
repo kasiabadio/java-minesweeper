@@ -10,5 +10,7 @@ public class Game {
         int numberOfMines = scanner.nextInt();
         board.placeRandomMines(numberOfMines);
         board.printBoard();
+        board.calculateNumberOfMinesAroundCells();
+        board.printBoardCalc();
     }
 }
